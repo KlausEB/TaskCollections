@@ -32,11 +32,6 @@ abstract public class Music implements Comparable<Music>{
                 '}';
     }
 
-    @Override
-    public int compareTo(Music o) {
-        return this.getClass().getName().length() - o.getClass().getName().length();
-    }
-
     public static Comparator<Music> getMusicStyle(){
         return new Comparator<Music>() {
             @Override

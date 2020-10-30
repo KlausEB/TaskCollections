@@ -9,6 +9,19 @@ abstract public class ClassicalMusic extends Music{
     }
 
     @Override
+    public int compareTo(Music o) {
+        if (o instanceof ClassicalMusic){
+            if (this.getClass() == o.getClass()){
+                System.out.println('f');
+                return 0;
+            }
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+
+    @Override
     public String toString() {
         return super.toString().replace("}",
                 "tonalityOfThePiece='" + tonalityOfThePiece + '\'' +
