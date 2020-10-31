@@ -15,18 +15,6 @@ public class RockMusic extends Music{
     }
 
     @Override
-    public int compareTo(Music o) {
-        if (o instanceof RockMusic){
-            if (this.equals(o)){
-                return 0;
-            }
-            return 1;
-        } else {
-            return -1;
-        }
-    }
-
-    @Override
     public String toString() {
         return super.toString().replace("}",
                 "rockMusicTypes=" + rockMusicTypes +

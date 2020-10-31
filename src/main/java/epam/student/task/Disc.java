@@ -3,6 +3,7 @@ package epam.student.task;
 import Music.Music;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Disc {
@@ -31,12 +32,12 @@ public class Disc {
     }
 
     public void SortByMusicStyle(){
-        musicDisc.sort(Music.getMusicStyle());
+        musicDisc.sort(Comparator.naturalOrder());
     }
 
     @Override
     public String toString() {
-        return "musicDisc=" + musicDisc +
+        return "musicDisc = " + musicDisc +
                 '}';
     }
 }

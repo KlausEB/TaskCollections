@@ -11,11 +11,7 @@ abstract public class ClassicalMusic extends Music{
     @Override
     public int compareTo(Music o) {
         if (o instanceof ClassicalMusic){
-            if (this.getClass() == o.getClass()){
-                System.out.println('f');
-                return 0;
-            }
-            return 1;
+            return this.getClass().getName().compareTo(o.getClass().getName());
         } else {
             return -1;
         }

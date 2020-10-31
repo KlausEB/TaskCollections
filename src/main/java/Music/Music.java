@@ -22,6 +22,15 @@ abstract public class Music implements Comparable<Music>{
     }
 
     @Override
+    public int compareTo(Music o) {
+        if (o instanceof ClassicalMusic){
+            return 1;
+        } else {
+            return this.getClass().getName().compareTo(o.getClass().getName());
+        }
+    }
+
+    @Override
     public String toString() {
         return this.getClass().getSimpleName() + "{" +
                 "songTitle='" + songTitle + '\'' +
@@ -31,14 +40,4 @@ abstract public class Music implements Comparable<Music>{
                 ", yearOfPublishing=" + yearOfPublishing +
                 '}';
     }
-
-    public static Comparator<Music> getMusicStyle(){
-        return new Comparator<Music>() {
-            @Override
-            public int compare(Music o1, Music o2) {
-                return o1.compareTo(o2);
-            }
-        };
-    }
-
 }
