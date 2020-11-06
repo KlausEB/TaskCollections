@@ -1,7 +1,5 @@
 package Music;
 
-import java.util.Comparator;
-
 abstract public class Music implements Comparable<Music>{
     private final String songTitle;
     private final String composerName;
