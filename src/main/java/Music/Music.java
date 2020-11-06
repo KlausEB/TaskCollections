@@ -1,6 +1,6 @@
 package Music;
 
-abstract public class Music implements Comparable<Music>{
+abstract public class Music{
     private final String songTitle;
     private final String composerName;
     private final String performerName;
@@ -17,15 +17,6 @@ abstract public class Music implements Comparable<Music>{
 
     public int getDurationInMinutes() {
         return durationInMinutes;
-    }
-
-    public int getYearOfPublishing() {
-        return yearOfPublishing;
-    }
-
-    @Override
-    public int compareTo(Music o) {
-        return getClass().getName().equals(o.getClass().getName()) ? 0 : this.getYearOfPublishing() - o.getYearOfPublishing();
     }
 
     @Override

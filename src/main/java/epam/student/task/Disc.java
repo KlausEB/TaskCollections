@@ -1,8 +1,9 @@
 package epam.student.task;
 
-import Music.Music;
+import Music.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class Disc {
     }
 
     public void SortByMusicStyle(){
-        musicDisc.sort(Comparator.naturalOrder());
+        musicDisc.sort(Comparator.comparing(o -> (o instanceof ClassicalMusic)).thenComparing(o -> o.getClass().getName()));
     }
 
     @Override
