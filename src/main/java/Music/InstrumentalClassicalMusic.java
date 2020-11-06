@@ -13,7 +13,7 @@ public class InstrumentalClassicalMusic extends ClassicalMusic{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "instrumentalClassicalMusicTypes=" + instrumentalClassicalMusicTypes +
+                ", instrumentalClassicalMusicTypes=" + instrumentalClassicalMusicTypes +
                 '}');
     }
 }

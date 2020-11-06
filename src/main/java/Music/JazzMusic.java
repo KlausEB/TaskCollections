@@ -13,7 +13,7 @@ public class JazzMusic extends Music{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "jazzMusicTypes=" + jazzMusicTypes +
+                ", jazzMusicTypes=" + jazzMusicTypes +
                 '}');
     }
 }

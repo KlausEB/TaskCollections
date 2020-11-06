@@ -13,7 +13,7 @@ abstract public class VocalClassicalMusic extends ClassicalMusic{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "accompanimentType=" + accompanimentType +
+                ", accompanimentType=" + accompanimentType +
                 '}');
     }
 }

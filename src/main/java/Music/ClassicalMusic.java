@@ -11,7 +11,7 @@ abstract public class ClassicalMusic extends Music{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "tonalityOfThePiece='" + tonalityOfThePiece + '\'' +
+                ", tonalityOfThePiece='" + tonalityOfThePiece + '\'' +
                 '}');
     }
 }

@@ -18,7 +18,7 @@ public class OperaMusic extends VocalClassicalMusic{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "operaTypes=" + operaMusicTypes +
+                ", operaTypes=" + operaMusicTypes +
                 ", leadVocalistsNames=" + Arrays.toString(leadVocalistsNames) +
                 '}');
     }

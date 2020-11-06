@@ -17,7 +17,7 @@ public class RockMusic extends Music{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "rockMusicTypes=" + rockMusicTypes +
+                ", rockMusicTypes=" + rockMusicTypes +
                 ", frontmanName='" + frontmanName + '\'' +
                 ", albumTitle='" + albumTitle + '\'' +
                 '}');

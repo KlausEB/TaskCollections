@@ -19,7 +19,7 @@ public class SoloVocalClassicalMusic extends VocalClassicalMusic{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "vocalistName='" + vocalistName + '\'' +
+                ", vocalistName='" + vocalistName + '\'' +
                 ", singingVoiceTypes=" + singingVoiceTypes +
                 ", soloVocalClassicalMusicType=" + soloVocalClassicalMusicType +
                 '}');

@@ -22,7 +22,7 @@ public class ChoirMusic extends VocalClassicalMusic{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                "choirMusicType=" + choirMusicType +
+                ", choirMusicType=" + choirMusicType +
                 ", choirCompositionType=" + choirCompositionType +
                 ", soloistName='" + conductorName + '\'' +
                 ", soloistSingingVoiceTypes=" + soloistSingingVoiceTypes +
