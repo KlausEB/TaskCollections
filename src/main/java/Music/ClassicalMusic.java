@@ -9,15 +9,6 @@ abstract public class ClassicalMusic extends Music{
     }
 
     @Override
-    public int compareTo(Music o) {
-        if (o instanceof ClassicalMusic){
-            return this.getClass().getName().compareTo(o.getClass().getName());
-        } else {
-            return -1;
-        }
-    }
-
-    @Override
     public String toString() {
         return super.toString().replace("}",
                 "tonalityOfThePiece='" + tonalityOfThePiece + '\'' +

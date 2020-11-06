@@ -19,13 +19,13 @@ abstract public class Music implements Comparable<Music>{
         return durationInMinutes;
     }
 
+    public int getYearOfPublishing() {
+        return yearOfPublishing;
+    }
+
     @Override
     public int compareTo(Music o) {
-        if (o instanceof ClassicalMusic){
-            return 1;
-        } else {
-            return this.getClass().getName().compareTo(o.getClass().getName());
-        }
+        return getClass().getName().equals(o.getClass().getName()) ? 0 : this.getYearOfPublishing() - o.getYearOfPublishing();
     }
 
     @Override
